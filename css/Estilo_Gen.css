@@ -1,0 +1,61 @@
+.contendor{
+    text-align: center;
+    color: black;
+    background-color: rgb(29, 151, 151);
+    display: flex;
+    flex: auto;
+}
+.links{
+    text-align: start;
+    color: black;
+    background-color: azure;
+    border-radius:10% 30% 50% 70%;;
+    display: flex;
+    flex: auto;
+}
+.imagen{
+    text-align:center;
+    display: flex;
+    flex: auto; 
+}
+div.imagen {
+    width: 96%;
+    max-width: 960px;
+    margin: 0 auto;
+    }
+    img {
+    width: 100%;
+    height: auto;
+    flex: auto;
+    display: flex;
+    }
+
+@media screen and (min-width: 800px) {
+    .contendor{
+        
+        flex-direction: column;
+        flex: auto;
+        background-color: blueviolet;
+    }
+}
+@media screen and (min-width: 800px){
+    .links{
+        flex: auto;
+        flex-direction: column;
+        background-color: violet;
+        display: flex;
+    }
+}
+@media screen and (min-width: 800px) {
+    .imagen{
+        flex: auto;
+        display:flex;
+    }   
+}
+@media screen and (min-width: 500px){
+    .img{
+        flex: content;
+        display: flex;
+        display: none;
+    }
+}
