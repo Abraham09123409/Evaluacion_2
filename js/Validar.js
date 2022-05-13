@@ -1,3 +1,10 @@
+$.validator.addMethod("Termina por",function(value,element,parametro){
+    if (value.endsWith(parametro)){
+        return
+    }
+    return false;
+    "Debe terminar por {0}"
+    })
 $("#formulario").validate({
     rules:{
         nombre:{
@@ -6,7 +13,8 @@ $("#formulario").validate({
         },
         email:{
             Required:true,
-            email:true
+            email:true,
+            terminar:"@duoc.cl"
         },
         numero:{
             Required:true,
